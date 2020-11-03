@@ -2,20 +2,24 @@
 
 //Number 1
 
-// const calculateAge = (birthYear)=> {
-//     return 2019 - birthYear;
-// }
+const calculateAge = (birthYear)=> {
+    return 2019 - birthYear;
+}
  
-// const yearUntilRetirement = (object) => {
-// 	const age = calculateAge(object.year);
-// 	const retirement = 60 - age;
+const yearUntilRetirement = (object) => {
+ const age = calculateAge(object.BirthYear);
+ const retirement = 60 - age;
    
-// 	if(retirement > 0){
-//     	console.log(`${object.firstName} retires in ${retirement} years`);
-// 	} else {
-//     	console.log(`${object.firstName} is already retired.`);
-// 	}
-// }
+ if(retirement > 0){
+     console.log(`${object.firstName} retires in ${retirement} years`);
+ } else {
+     console.log(`${object.firstName} is already retired.`);
+ }
+}
+ 
+yearUntilRetirement(
+    {BirthYear: 1987, firstName: 'John'}
+    );
  
 // yearUntilRetirement(
 //     {birthYear: 1987, firstName: 'John'}
@@ -83,4 +87,3 @@ makeAjaxRequest(`www.google.com`);
 // let semuaNamaBuah = [...namaBuah1,namaBuah2];
 
 // console.log (semuaNamaBuah)
-
